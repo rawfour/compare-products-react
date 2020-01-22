@@ -36,6 +36,41 @@ class App extends React.Component {
       description: "Zwyczajne banany",
       price: "5.34"
     },
+    {
+      id: 5,
+      name: "Bakłażany",
+      img: "/img/image05.jpg",
+      description: "Poprostu bakłażany",
+      price: "6.39"
+    },
+    {
+      id: 6,
+      name: "Kokos",
+      img: "/img/image06.jpg",
+      description: "Zwykłe kokosy",
+      price: "4.19"
+    },
+    {
+      id: 7,
+      name: "Papryka",
+      img: "/img/image07.jpg",
+      description: "Tylko papryka",
+      price: "2.24"
+    },
+    {
+      id: 8,
+      name: "Ananas",
+      img: "/img/image08.jpg",
+      description: "Zwyczajny ananas",
+      price: "3.55"
+    },
+    {
+      id: 9,
+      name: "ziemniaki",
+      img: "/img/image09.jpg",
+      description: "Zwykłe ziemniaki",
+      price: "1.74"
+    },
 
   ]
   state = {}

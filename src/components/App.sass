@@ -4,44 +4,56 @@
     box-sizing: border-box
     font-family: 'Muli', sans-serif
 
+
+body
+    background-color: #f6f7f8
+    color: #373535
+
 .product
-    height: 420px
+    position: relative
+    height: 400px
     display: flex
     flex-wrap: wrap
     border-radius: 5px
-    padding: 0 10px
     border: 1px solid #ddd
+    background-color: #FFFFFF
     transition: all .5s ease-out
+    cursor: pointer
+    margin-bottom: 30px
     &:hover
         box-shadow: 0 13px 21px -5px rgba(0,0,0,.2)
 
 
 .produc__img
+    position: absolute
     width: 100%
+    border-radius: 5px
+
+.product__text
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-self: flex-end
+    padding: 10px 15px
+    margin-bottom: 20px
+    position: relative
+    background-color: #FFFFFF
 
 .product__title
     flex-basis: 60%
-    display: flex
-    align-items: center
-    font-size: 25px
+    font-size: 22px
     margin: 0
-    align-self: flex-end
 
 .product__short-description
     flex-basis: 1000%
     order: 3
-    display: flex
-    align-items: center
     font-size: 15px
     color: #b9b6b6
-    align-self: flex-end
+    margin: 0
 
 .product__price
     flex-basis: 40%
     order: 2
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 24px
+    text-align: right
+    font-size: 22px
     color: #089108
-    align-self: flex-end
