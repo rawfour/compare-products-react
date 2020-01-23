@@ -9,9 +9,13 @@ body
     background-color: #f6f7f8
     color: #373535
 
+.product-list-page
+    position: relative
+
 .product
     position: relative
     height: 400px
+    max-width: 300px
     display: flex
     flex-wrap: wrap
     border-radius: 5px
@@ -19,15 +23,59 @@ body
     background-color: #FFFFFF
     transition: all .5s ease-out
     cursor: pointer
-    margin-bottom: 30px
+    margin: 0 auto 30px auto
     &:hover
         box-shadow: 0 13px 21px -5px rgba(0,0,0,.2)
+        .product__thumb:after
+            opacity: .5
+            visibility: visible
+        .product__compare-btn
+            visibility: visible
+            opacity: 1
 
 
-.produc__img
+.product__thumb
     position: absolute
     width: 100%
+    &:after
+        content: ""
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #e18c4e
+        opacity: 0
+        visibility: hidden
+        border-radius: 5px 5px 0 0
+        transition: all .3s ease-out
+
+.product__thumb--compare-remove:after
+    opacity: .5
+    visibility: visible
+
+.produc__img
+    width: 100%
     border-radius: 5px
+
+.product__compare-btn
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: transparent
+    font-size: 22px
+    border: 2px solid #FFFFFF
+    color: #FFFFFF
+    padding: 5px 15px
+    z-index: 2
+    transition: all .3s ease-out
+    visibility: hidden
+    opacity: 0 
+
+.product__compare-btn--remove
+    visibility: visible
+    opacity: 1
 
 .product__text
     width: 100%
@@ -56,4 +104,60 @@ body
     order: 2
     text-align: right
     font-size: 22px
-    color: #089108
+    color: #e18c4e
+    font-weight: 600
+
+.compare
+    width: 100%
+    background-color: #FFFFFF
+    position: sticky
+    bottom: 0
+    left: 0
+    border-radius: 5px 5px 0 0
+    border: 1px solid #ddd
+    box-shadow: 0 1px 11px -5px rgba(0,0,0,.2)
+    overflow: hidden
+    overflow-x: scroll
+    scrollbar-width: none
+    z-index: 3
+
+.compare__row
+    display: flex
+    list-style: none
+    margin: 0
+
+.compare__param
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    padding: 20px 10px
+    width: calc(100% / 4)
+    min-width: 172px
+    font-size: 22px
+    margin: 0
+    border-bottom: 1px solid #ddd
+
+.compare__param--head
+    background-color: #f6f7f8 
+
+.compare__img
+    flex-basis: 40px
+
+.compare__single-color
+    border-radius: 100%
+    height: 20px
+    width: 20px
+    border: 5px
+    margin: 3px
+
+.compare__param-condition
+    color: #FFFFFF
+    font-weight: 600
+    border-bottom: none
+
+.compare__param-condition--fresh
+    background-color: #4db04d
+
+.compare__param-condition--frozen
+    background-color: #4f94ff

@@ -5,7 +5,7 @@ import Product from "./Product";
 
 const ProductsList = (props) => {
 
-    const products = props.data.map((product) => (<Product key={product.id} product={product} />));
+    const products = props.data.map((product) => (<Product key={product.id} product={product} toCompare={props.toCompare} add={props.add} remove={props.remove} />));
 
     return (
         <>
