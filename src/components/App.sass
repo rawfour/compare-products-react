@@ -110,9 +110,11 @@ body
 .compare
     width: 100%
     background-color: #FFFFFF
-    position: sticky
-    bottom: 0
-    left: 0
+    position: fixed
+    max-width: 1500px
+    bottom: -100%
+    left: 50%
+    transform: translateX(-50%)
     border-radius: 5px 5px 0 0
     border: 1px solid #ddd
     box-shadow: 0 1px 11px -5px rgba(0,0,0,.2)
@@ -120,6 +122,14 @@ body
     overflow-x: scroll
     scrollbar-width: none
     z-index: 3
+    animation: compare-bar 1s forwards
+
+@keyframes compare-bar 
+  from 
+      bottom: -100%
+  to 
+      bottom: 0%
+
 
 .compare__row
     display: flex
