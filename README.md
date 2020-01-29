@@ -10,7 +10,7 @@
 
 First clone this repository.
 ```bash
-$ git clone https://github.com/rawfour/react-compare-products.git
+$ git clone https://github.com/rawfour/compare-products-react.git
 ```
 
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
