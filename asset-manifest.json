@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/compare-products-react/static/css/main.d2134f2b.chunk.css",
+    "main.js": "/compare-products-react/static/js/main.083018ef.chunk.js",
+    "main.js.map": "/compare-products-react/static/js/main.083018ef.chunk.js.map",
+    "runtime-main.js": "/compare-products-react/static/js/runtime-main.cee69a6a.js",
+    "runtime-main.js.map": "/compare-products-react/static/js/runtime-main.cee69a6a.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/compare-products-react/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.c321ebc4.chunk.js": "/compare-products-react/static/js/2.c321ebc4.chunk.js",
+    "static/js/2.c321ebc4.chunk.js.map": "/compare-products-react/static/js/2.c321ebc4.chunk.js.map",
+    "index.html": "/compare-products-react/index.html",
+    "precache-manifest.bdd3ecefb0133b5108744efd1a72dedd.js": "/compare-products-react/precache-manifest.bdd3ecefb0133b5108744efd1a72dedd.js",
+    "service-worker.js": "/compare-products-react/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/compare-products-react/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.d2134f2b.chunk.css.map": "/compare-products-react/static/css/main.d2134f2b.chunk.css.map",
+    "static/js/2.c321ebc4.chunk.js.LICENSE": "/compare-products-react/static/js/2.c321ebc4.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cee69a6a.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.c321ebc4.chunk.js",
+    "static/css/main.d2134f2b.chunk.css",
+    "static/js/main.083018ef.chunk.js"
+  ]
+}
