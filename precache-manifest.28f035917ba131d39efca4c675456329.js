@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "280ddddb2c5ca15e47b7b12ed7fcf2d4",
+    "revision": "f0e6bff400f08df7dcf571f3a3ccc1d4",
     "url": "/compare-products-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compare-products-react/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "fc9bef4a76831e0054db",
+    "revision": "325382f9eba71d920405",
     "url": "/compare-products-react/static/css/main.d2134f2b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compare-products-react/static/js/2.c321ebc4.chunk.js.LICENSE"
   },
   {
-    "revision": "fc9bef4a76831e0054db",
-    "url": "/compare-products-react/static/js/main.083018ef.chunk.js"
+    "revision": "325382f9eba71d920405",
+    "url": "/compare-products-react/static/js/main.300b217a.chunk.js"
   },
   {
     "revision": "f4fb1b27fd3d6fc60f1b",
