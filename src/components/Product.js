@@ -18,7 +18,7 @@ const Product = (props) => {
             <div className="col-sm-6 col-lg-4 col-xl-3">
                 <div className="product">
                     <div className={thumbClass}>
-                        <img src={img} alt={name} className="produc__img" />
+                        <img src={process.env.PUBLIC_URL + img} alt={name} className="produc__img" />
                         {toCompare.length !== 0 ? removeBtn : addBtn}
                     </div>
                     <div className="product__text">
