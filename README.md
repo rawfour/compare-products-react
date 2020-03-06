@@ -1,6 +1,8 @@
 # React - Product Compare
 https://rawfour.github.io/compare-products-react/
 
+<img src="public/screenshots/screenshot.PNG">
+
 ## Table of contents
 * [Instructions](#Instructions)
 * [Description](#Description)
@@ -25,7 +27,7 @@ $ npm start # or yarn start
 ```
 
 ## Description
-This is product comparison app build using React + Bootstrap + SASS
+This is simple product compare page built in React.
  
 ## Technologies
 Project uses:
