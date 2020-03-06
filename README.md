@@ -32,4 +32,5 @@ Project uses:
 * React
 * Bootstrap
 * SASS
+* BEM methodology
 
