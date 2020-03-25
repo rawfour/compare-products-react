@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import './App.sass';
+import "./App.sass";
 
 import ProductsList from "./ProductsList";
 import Compare from "./Compare";
 
 class App extends React.Component {
-
   data = [
     {
       id: 1,
@@ -88,42 +87,45 @@ class App extends React.Component {
       price: "1.74",
       colors: ["black", "blue"],
       fresh: false
-    },
-
-  ]
+    }
+  ];
   state = {
     toCompare: []
-  }
+  };
 
-  handleAddToCompare = (product) => {
+  handleAddToCompare = product => {
     if (this.state.toCompare.length === 4) {
-      return null
+      return null;
     } else {
-      const toCompare = [...this.state.toCompare, product]
+      const toCompare = [...this.state.toCompare, product];
       this.setState({
         toCompare
-      })
+      });
     }
-  }
+  };
 
-  handleRemoveFromCompare = (id) => {
+  handleRemoveFromCompare = id => {
     const toCompare = [...this.state.toCompare];
     const removedProduct = toCompare.filter(product => product.id !== id);
     this.setState({
       toCompare: removedProduct
-    })
-  }
+    });
+  };
 
   render() {
     return (
-
       <div className="product-list-page container mt-5">
         <h1>React comapre products</h1>
-        <ProductsList remove={this.handleRemoveFromCompare} add={this.handleAddToCompare} data={this.data} toCompare={this.state.toCompare} />
-        {this.state.toCompare.length >= 2 ? <Compare toCompare={this.state.toCompare} /> : null}
+        <ProductsList
+          remove={this.handleRemoveFromCompare}
+          add={this.handleAddToCompare}
+          data={this.data}
+          toCompare={this.state.toCompare}
+        />
+        {this.state.toCompare.length >= 2 ? (
+          <Compare toCompare={this.state.toCompare} />
+        ) : null}
       </div>
-
-
     );
   }
 }
