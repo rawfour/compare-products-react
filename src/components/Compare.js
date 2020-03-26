@@ -1,29 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ComparedProduct from "./ComparedProduct";
+import React from 'react';
+import { AppContext } from '../context';
+import ComparedProduct from './ComparedProduct';
 
-const Compare = ({ toCompare }) => {
-  const productsToCompare = toCompare.map(product => (
-    <ComparedProduct key={product.id} product={product} />
-  ));
-
+const Compare = () => {
   return (
-    <>
-      <div className="compare">
-        <ul className="compare__row">
-          <li className="compare__param compare__param--head">Produkt</li>
-          <li className="compare__param compare__param--head">Cena</li>
-          <li className="compare__param compare__param--head">Kolory</li>
-          <li className="compare__param compare__param--head">Stan</li>
-        </ul>
-        {productsToCompare}
-      </div>
-    </>
+    <AppContext.Consumer>
+      {({ toCompare }) => {
+        if (toCompare.length >= 2) {
+          const productsToCompare = toCompare.map((product) => (
+            <ComparedProduct key={product.id} product={product} />
+          ));
+          return (
+            <div className="compare" data-testid="compare">
+              <ul className="compare__row">
+                <li className="compare__param compare__param--head">Produkt</li>
+                <li className="compare__param compare__param--head">Cena</li>
+                <li className="compare__param compare__param--head">Kolory</li>
+                <li className="compare__param compare__param--head">Stan</li>
+              </ul>
+              {productsToCompare}
+            </div>
+          );
+        }
+        return null;
+      }}
+    </AppContext.Consumer>
   );
-};
-
-Compare.propTypes = {
-  toCompare: PropTypes.arrayOf(PropTypes.shape()).isRequired
 };
 
 export default Compare;

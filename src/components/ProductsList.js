@@ -1,36 +1,20 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Product from "./Product";
+import React from 'react';
+import { AppContext } from '../context';
+import Product from './Product';
 
-const ProductsList = ({ data, toCompare, add, remove }) => {
-  const products = data.map(product => (
-    <Product
-      key={product.id}
-      product={product}
-      toCompare={toCompare}
-      add={add}
-      remove={remove}
-    />
-  ));
+const ProductsList = () => {
   return (
-    <>
-      <div data-testid="productsList" className="products row mt-5 mb-5">
-        {products}
-      </div>
-    </>
+    <AppContext.Consumer>
+      {({ data }) => {
+        const products = data.map((product) => <Product key={product.id} product={product} />);
+        return (
+          <div data-testid="productsList" className="products row mt-5 mb-5">
+            {products}
+          </div>
+        );
+      }}
+    </AppContext.Consumer>
   );
-};
-
-ProductsList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-  toCompare: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-  add: PropTypes.func,
-  remove: PropTypes.func
-};
-
-ProductsList.defaultProps = {
-  add: null,
-  remove: null
 };
 
 export default ProductsList;
