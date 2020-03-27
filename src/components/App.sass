@@ -114,7 +114,7 @@ body
     max-width: 1500px
     bottom: 0
     left: 50%
-    transform: translateX(-50%)
+    transform: translate(-50%, 100%)
     border-radius: 5px 5px 0 0
     border: 1px solid #ddd
     box-shadow: 0 1px 11px -5px rgba(0,0,0,.2)
@@ -123,14 +123,14 @@ body
     scrollbar-width: none
     z-index: 3
     transition: .3s
-    animation: compare-bar 1s forwards
+    animation: compare-bar 1s
 
 
 @keyframes compare-bar 
   from 
-      bottom: -100%
+      transform: translate(-50%, 100%)
   to 
-      bottom: 0%
+      transform: translate(-50%, calc(100% - 222px)) 
 
 
 .compare__row
@@ -144,7 +144,7 @@ body
     justify-content: center
     align-items: center
     flex-wrap: wrap
-    padding: 20px 10px
+    height: 74px
     width: calc(100% / 4)
     min-width: 172px
     font-size: 22px

@@ -11,7 +11,11 @@ const Compare = () => {
             <ComparedProduct key={product.id} product={product} />
           ));
           return (
-            <div className="compare" data-testid="compare">
+            <div
+              className="compare"
+              data-testid="compare"
+              style={{ transform: `translate(-50%, calc(100% - ${74 * (toCompare.length + 1)}px)` }}
+            >
               <ul className="compare__row">
                 <li className="compare__param compare__param--head">Produkt</li>
                 <li className="compare__param compare__param--head">Cena</li>
