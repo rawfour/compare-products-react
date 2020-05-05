@@ -16,7 +16,7 @@ const ComparedProduct = ({ product }) => {
     <>
       <ul className="compare__row">
         <li className="compare__param compare__param--name">
-          <img src={process.env.PUBLIC_URL + img} alt="" className="compare__img" />
+          <img src={img} alt="" className="compare__img" />
           <span className="compare__text">{name}</span>
         </li>
         <li className="compare__param compare__param--price">{price} zł</li>

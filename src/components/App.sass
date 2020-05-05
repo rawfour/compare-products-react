@@ -4,6 +4,13 @@
     box-sizing: border-box
     font-family: 'Muli', sans-serif
 
+@keyframes fadeIn 
+    from
+        opacity: 0
+        visibility: hidden
+    to
+        opacity: 1
+        visibility: visible
 
 body
     background-color: #f6f7f8
@@ -16,8 +23,8 @@ body
     position: relative
     height: 400px
     max-width: 300px
-    display: flex
-    flex-wrap: wrap
+    display: grid
+    grid-template-rows: 1fr auto
     border-radius: 5px
     border: 1px solid #ddd
     background-color: #FFFFFF
@@ -32,10 +39,23 @@ body
         .product__compare-btn
             visibility: visible
             opacity: 1
+    &--loading
+        cursor: auto
+        &:hover
+            box-shadow: none
+            .product__thumb:after
+                opacity: 0
+                visibility: hidden
+            .product__compare-btn
+                visibility: hidden
+                opacity: 0
 
 
 .product__thumb
-    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
     width: 100%
     &:after
         content: ""
@@ -55,8 +75,13 @@ body
     visibility: visible
 
 .product__img
+    opacity: 0
+    visibility: hidden
+    position: absolute
     width: 100%
     border-radius: 5px
+    animation: fadeIn 1.2s .3s forwards
+
 
 .product__compare-btn
     position: absolute
@@ -83,9 +108,9 @@ body
     flex-wrap: wrap
     align-self: flex-end
     padding: 10px 15px
-    margin-bottom: 20px
     position: relative
     background-color: #FFFFFF
+    margin-bottom: 15px;
 
 .product__title
     flex-basis: 60%
