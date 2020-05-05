@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/compare-products-react/static/css/main.1f326fa8.chunk.css",
-    "main.js": "/compare-products-react/static/js/main.70d63e92.chunk.js",
-    "main.js.map": "/compare-products-react/static/js/main.70d63e92.chunk.js.map",
+    "main.css": "/compare-products-react/static/css/main.50a13b7d.chunk.css",
+    "main.js": "/compare-products-react/static/js/main.d0faf21b.chunk.js",
+    "main.js.map": "/compare-products-react/static/js/main.d0faf21b.chunk.js.map",
     "runtime-main.js": "/compare-products-react/static/js/runtime-main.cee69a6a.js",
     "runtime-main.js.map": "/compare-products-react/static/js/runtime-main.cee69a6a.js.map",
     "static/css/2.47e06e2e.chunk.css": "/compare-products-react/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.d76c03e0.chunk.js": "/compare-products-react/static/js/2.d76c03e0.chunk.js",
-    "static/js/2.d76c03e0.chunk.js.map": "/compare-products-react/static/js/2.d76c03e0.chunk.js.map",
+    "static/js/2.1059e523.chunk.js": "/compare-products-react/static/js/2.1059e523.chunk.js",
+    "static/js/2.1059e523.chunk.js.map": "/compare-products-react/static/js/2.1059e523.chunk.js.map",
     "index.html": "/compare-products-react/index.html",
-    "precache-manifest.cc356ae084442a0b3067de9be0dcf665.js": "/compare-products-react/precache-manifest.cc356ae084442a0b3067de9be0dcf665.js",
+    "precache-manifest.4e529cd4ed188aa94cec4bdd0daf5cc6.js": "/compare-products-react/precache-manifest.4e529cd4ed188aa94cec4bdd0daf5cc6.js",
     "service-worker.js": "/compare-products-react/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/compare-products-react/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.1f326fa8.chunk.css.map": "/compare-products-react/static/css/main.1f326fa8.chunk.css.map",
-    "static/js/2.d76c03e0.chunk.js.LICENSE": "/compare-products-react/static/js/2.d76c03e0.chunk.js.LICENSE"
+    "static/css/main.50a13b7d.chunk.css.map": "/compare-products-react/static/css/main.50a13b7d.chunk.css.map",
+    "static/js/2.1059e523.chunk.js.LICENSE": "/compare-products-react/static/js/2.1059e523.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.cee69a6a.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.d76c03e0.chunk.js",
-    "static/css/main.1f326fa8.chunk.css",
-    "static/js/main.70d63e92.chunk.js"
+    "static/js/2.1059e523.chunk.js",
+    "static/css/main.50a13b7d.chunk.css",
+    "static/js/main.d0faf21b.chunk.js"
   ]
 }
